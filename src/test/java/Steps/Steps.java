@@ -1,11 +1,18 @@
 package Steps;
 
+import java.io.File;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -52,6 +59,14 @@ public class Steps {
 		driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
 		driver.findElement(By.name("login")).sendKeys("Crustacean");
 		driver.findElement(By.name("password")).sendKeys("crust001acean");
+		String timestamp = new SimpleDateFormat("YYYYMMdd_hhmmss").format(new Date());
+		TakesScreenshot ts = (TakesScreenshot)driver;
+		File source = ts.getScreenshotAs(OutputType.FILE);
+		try {
+			FileUtils.copyFile(source, new File ("./target/screenshots/Screenshot" + timestamp + ".png "));
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 
 	@Then("^User clicks on Login button$")
@@ -91,6 +106,14 @@ public class Steps {
 		System.out.println(title);
 		Assert.assertEquals("Amazon.com: Online Shopping for Electronics, Apparel, Computers, Books, DVDs & more",
 				title);
+		String timestamp = new SimpleDateFormat("YYYYMMdd_hhmmss").format(new Date());
+		TakesScreenshot ts = (TakesScreenshot)driver;
+		File source = ts.getScreenshotAs(OutputType.FILE);
+		try {
+			FileUtils.copyFile(source, new File ("./target/screenshots/Screenshot" + timestamp + ".png "));
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 
 	@Then("^User enters search value Samsung$")
