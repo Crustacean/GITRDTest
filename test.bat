@@ -1,0 +1,1 @@
+cd C:\Users\elkana.mbiti\eclipse-workspace\GitRDTest && mvn test && mvn compile && echo pushing to GIT... && git status && git add . && git commit -m "new now commit" && git push -u https://github.com/Crustacean/GITRDTest.git && echo checking health... && echo health is OK.

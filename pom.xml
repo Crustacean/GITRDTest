@@ -115,7 +115,6 @@
 					<skipTests>false</skipTests>
 					<forkCount>0</forkCount>
 					<reuseForks>true</reuseForks>
-					<reportsDirectory>${project.build.directory}/surefire-reports-${surefire.forkNumber}</reportsDirectory>
 					<includes>
 						<exclude>**/*Runner.java</exclude>
 					</includes>
