@@ -1,11 +1,13 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>GitRDTest</groupId>
-  <artifactId>GitRDTest</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  
-  
-  <dependencies>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>GitRDTest</groupId>
+	<artifactId>GitRDTest</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+
+	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
@@ -97,10 +99,26 @@
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.0</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>2.20.1</version>
 				<configuration>
 					<testFailureIgnore>true</testFailureIgnore>
+					<skipTests>false</skipTests>
+					<forkCount>0</forkCount>
+					<reuseForks>true</reuseForks>
+					<reportsDirectory>${project.build.directory}/surefire-reports-${surefire.forkNumber}</reportsDirectory>
+					<includes>
+						<exclude>**/*Runner.java</exclude>
+					</includes>
 				</configuration>
 			</plugin>
 			<plugin>
@@ -128,6 +146,6 @@
 		</plugins>
 
 	</build>
-  
-  
+
+
 </project>
