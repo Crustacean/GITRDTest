@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="24.280851">
-<testcase classname="login action" name="User has to successfully login to application" time="9.579165">
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="30.264915">
+<testcase classname="login action" name="User has to successfully login to application" time="9.250411">
 <system-out><![CDATA[Given User is at the login page.............................................passed
 When title of login page is Sign in to GitHub...............................passed
 Then User enters username and password......................................passed
@@ -7,7 +7,7 @@ Then User clicks on Login button............................................pass
 Then User is on the home....................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="login action" name="User has to successfully search for product on Amazon" time="14.701686">
+<testcase classname="login action" name="User has to successfully search for product on Amazon" time="21.014504">
 <system-out><![CDATA[Given User is at the Amazon landing page....................................passed
 When title of login page is Amazon.com: Online Shopping for Electronics, Apparel, Computers, Books, DVDs & more.passed
 Then User enters search value Samsung.......................................passed
