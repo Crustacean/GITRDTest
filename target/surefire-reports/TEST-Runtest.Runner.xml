@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="Runtest.Runner" time="129.283" tests="12" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="Runtest.Runner" time="40.794" tests="12" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -73,7 +73,7 @@
   <testcase name="Scenario: User has to successfully login to application" classname="Scenario: User has to successfully login to application" time="0.001"/>
   <testcase name="Given User is at the Amazon landing page" classname="Scenario: User has to successfully search for product on Amazon" time="0"/>
   <testcase name="When title of login page is Amazon.com: Online Shopping for Electronics, Apparel, Computers, Books, DVDs &amp; more" classname="Scenario: User has to successfully search for product on Amazon" time="0"/>
-  <testcase name="Then User enters search value Samsung" classname="Scenario: User has to successfully search for product on Amazon" time="0"/>
+  <testcase name="Then User enters search value Samsung" classname="Scenario: User has to successfully search for product on Amazon" time="0.001"/>
   <testcase name="Then User clicks on search button" classname="Scenario: User has to successfully search for product on Amazon" time="0"/>
   <testcase name="Then First result is four hundred dollars" classname="Scenario: User has to successfully search for product on Amazon" time="0"/>
   <testcase name="Scenario: User has to successfully search for product on Amazon" classname="Scenario: User has to successfully search for product on Amazon" time="0.001"/>
