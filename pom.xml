@@ -137,7 +137,7 @@
 							<cucumberOutput>${project.build.directory}/cucumber.json</cucumberOutput>
 							<skippedFails>true</skippedFails>
 							<enableflashCharts>true</enableflashCharts>
-							<buildNumber>100</buildNumber>
+							<buildNumber>${BUILD_NUMBER}</buildNumber>
 						</configuration>
 					</execution>
 				</executions>
