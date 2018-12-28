@@ -43,35 +43,35 @@ formatter.match({
   "location": "Steps.user_at_the_login_page()"
 });
 formatter.result({
-  "duration": 7577361944,
+  "duration": 21399995892,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.title_of_login_page_is_Sign_in_to_GitHub()"
 });
 formatter.result({
-  "duration": 13255896,
+  "duration": 12563353,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.user_enters_username_and_password()"
 });
 formatter.result({
-  "duration": 453267179,
+  "duration": 467649001,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.user_clicks_on_Login_button()"
 });
 formatter.result({
-  "duration": 1962866188,
+  "duration": 7786120775,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.user_is_on_the_home()"
 });
 formatter.result({
-  "duration": 296086401,
+  "duration": 200323081,
   "status": "passed"
 });
 formatter.scenario({
@@ -111,35 +111,35 @@ formatter.match({
   "location": "Steps.user_is_at_the_Amazon_landing_page()"
 });
 formatter.result({
-  "duration": 10601273046,
+  "duration": 35195719034,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.title_of_login_page_is_Amazon_com_Online_Shopping_for_Electronics_Apparel_Computers_Books_DVDs_more()"
 });
 formatter.result({
-  "duration": 2293156625,
+  "duration": 5766166216,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.user_enters_search_value_Samsung()"
 });
 formatter.result({
-  "duration": 161006949,
+  "duration": 118962126,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.user_clicks_on_search_button()"
 });
 formatter.result({
-  "duration": 4646412782,
+  "duration": 54872429483,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.first_result_is_four_hundred_dollars()"
 });
 formatter.result({
-  "duration": 2365277090,
+  "duration": 2425693461,
   "status": "passed"
 });
 });
