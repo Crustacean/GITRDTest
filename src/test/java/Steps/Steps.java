@@ -17,6 +17,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import cucumber.api.java.After;
+import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -24,12 +26,18 @@ import cucumber.api.java.en.When;
 public class Steps {
 
 	WebDriver driver;
+	
+	@Before
+	public void setup() throws Exception{
+		playback.startRecording("navigationTest");
+	}
 
 	@Given("^User is at the login page$")
-	public void user_at_the_login_page() {
+	public void user_at_the_login_page() throws Exception{		
 		System.setProperty("webdriver.chrome.driver",
 				"C:\\Users\\elkana.mbiti\\Desktop\\New folder\\chromedriver\\chromedriver.exe");
 		driver = new ChromeDriver();
+		//playback.startRecording("navigationTest");
 //		ChromeOptions options = new ChromeOptions();
 //		options.addArguments("window-size=500,480");
 //		DesiredCapabilities cap = DesiredCapabilities.chrome();
@@ -38,6 +46,8 @@ public class Steps {
 		Dimension d = new Dimension(320, 700);
 		driver.manage().window().setSize(d);
 		driver.get("https://github.com/login");
+		
+		//playback.stopRecording();
 	}
 
 	@When("^title of login page is Sign in to GitHub$")
@@ -59,7 +69,7 @@ public class Steps {
 		driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
 		driver.findElement(By.name("login")).sendKeys("Crustacean");
 		driver.findElement(By.name("password")).sendKeys("crust001acean");
-		String timestamp = new SimpleDateFormat("YYYYMMdd_hhmmss").format(new Date());
+		String timestamp = new SimpleDateFormat("YYYYMMdd_hh.mm.ss").format(new Date());
 		TakesScreenshot ts = (TakesScreenshot)driver;
 		File source = ts.getScreenshotAs(OutputType.FILE);
 		try {
@@ -97,6 +107,7 @@ public class Steps {
 		System.setProperty("webdriver.chrome.driver",
 				"C:\\Users\\elkana.mbiti\\Desktop\\New folder\\chromedriver\\chromedriver.exe");
 		driver = new ChromeDriver();
+		driver.manage().window().maximize();
 		driver.get("https://www.amazon.com/");
 	}
 
@@ -106,7 +117,7 @@ public class Steps {
 		System.out.println(title);
 		Assert.assertEquals("Amazon.com: Online Shopping for Electronics, Apparel, Computers, Books, DVDs & more",
 				title);
-		String timestamp = new SimpleDateFormat("YYYYMMdd_hhmmss").format(new Date());
+		String timestamp = new SimpleDateFormat("YYYYMMdd_hh.mm.ss").format(new Date());
 		TakesScreenshot ts = (TakesScreenshot)driver;
 		File source = ts.getScreenshotAs(OutputType.FILE);
 		try {
@@ -118,6 +129,15 @@ public class Steps {
 
 	@Then("^User enters search value Samsung$")
 	public void user_enters_search_value_Samsung() {
+//		driver.navigate().back();
+//		driver.navigate().forward();
+//		driver.navigate().back();
+//		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+//		driver.navigate().forward();
+//		driver.navigate().back();
+//		driver.navigate().forward();
+//		driver.navigate().back();
+//		driver.navigate().forward();
 		driver.findElement(By.id("twotabsearchtextbox")).sendKeys("Samsung");
 	}
 
@@ -130,12 +150,28 @@ public class Steps {
 	}
 
 	@Then("^First result is four hundred dollars$")
-	public void first_result_is_four_hundred_dollars() {
-		String price = driver.findElement(By.xpath("//span[@class='sx-price-whole'][contains(text(),'377')]"))
+	public void first_result_is_four_hundred_dollars() throws Exception{
+		String price = driver.findElement(By.xpath("//span[@class='sx-price-whole'][contains(text(),'212')]"))
 				.getText();
 		System.out.println(price);
-		Assert.assertEquals("377", price);
+		Assert.assertEquals("212", price);
 		driver.close();
 	}
+	
+	@After
+	public void tearDown() throws Exception{
+		playback.stopRecording();
+	}
+	
+//	private void ConfirmEmailWasReceived() {
+//		TimeStamp testStart = TimeStamp.NOW;
+//		do {
+//		if (EmailFound()) {
+//		return;
+//		}
+//		Wait(SMALL_PAUSE);
+//		} while (TimeStamp.NOW < testStart + DELAY_PERIOD);
+//		Fail("No email was found in a sensible time");
+//		}	
 
 }

@@ -3,16 +3,38 @@
     "line": 1,
     "elements": [
       {
+        "before": [
+          {
+            "result": {
+              "duration": 147604206,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Steps.setup()"
+            }
+          }
+        ],
         "line": 3,
         "name": "User has to successfully login to application",
         "description": "",
         "id": "login-action;user-has-to-successfully-login-to-application",
+        "after": [
+          {
+            "result": {
+              "duration": 85571590,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Steps.tearDown()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 7604662675,
+              "duration": 10154524506,
               "status": "passed"
             },
             "line": 4,
@@ -24,7 +46,7 @@
           },
           {
             "result": {
-              "duration": 9906169,
+              "duration": 16879019,
               "status": "passed"
             },
             "line": 5,
@@ -36,7 +58,7 @@
           },
           {
             "result": {
-              "duration": 440791135,
+              "duration": 515806624,
               "status": "passed"
             },
             "line": 6,
@@ -48,7 +70,7 @@
           },
           {
             "result": {
-              "duration": 1803013214,
+              "duration": 2196190893,
               "status": "passed"
             },
             "line": 7,
@@ -60,7 +82,7 @@
           },
           {
             "result": {
-              "duration": 212569595,
+              "duration": 247080394,
               "status": "passed"
             },
             "line": 8,
@@ -73,16 +95,38 @@
         ]
       },
       {
+        "before": [
+          {
+            "result": {
+              "duration": 8442473,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Steps.setup()"
+            }
+          }
+        ],
         "line": 10,
         "name": "User has to successfully search for product on Amazon",
         "description": "",
         "id": "login-action;user-has-to-successfully-search-for-product-on-amazon",
+        "after": [
+          {
+            "result": {
+              "duration": 72560621,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Steps.tearDown()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 7275933125,
+              "duration": 9203849957,
               "status": "passed"
             },
             "line": 11,
@@ -94,7 +138,7 @@
           },
           {
             "result": {
-              "duration": 1975628256,
+              "duration": 4248026567,
               "status": "passed"
             },
             "line": 12,
@@ -106,7 +150,7 @@
           },
           {
             "result": {
-              "duration": 136589773,
+              "duration": 141873044,
               "status": "passed"
             },
             "line": 13,
@@ -118,7 +162,7 @@
           },
           {
             "result": {
-              "duration": 3401692681,
+              "duration": 10364241527,
               "status": "passed"
             },
             "line": 14,
@@ -130,7 +174,7 @@
           },
           {
             "result": {
-              "duration": 2377734172,
+              "duration": 2424290538,
               "status": "passed"
             },
             "line": 15,
