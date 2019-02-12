@@ -151,11 +151,11 @@ public class Steps {
 
 	@Then("^First result is four hundred dollars$")
 	public void first_result_is_four_hundred_dollars() throws Exception{
-		String price = driver.findElement(By.xpath("//span[@class='sx-price-whole'][contains(text(),'212')]"))
+		String price = driver.findElement(By.xpath("//span[@class='sx-price-whole'][contains(text(),'211')]"))
 				.getText();
 		System.out.println(price);
-		Assert.assertEquals("212", price);
-		driver.close();
+		Assert.assertEquals("211", price);
+		driver.quit();
 	}
 	
 	@After

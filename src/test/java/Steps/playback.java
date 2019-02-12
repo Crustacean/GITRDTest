@@ -65,8 +65,7 @@ public class playback extends ScreenRecorder {
 		Rectangle captureSize = new Rectangle(0, 0, width, height);
 
 		GraphicsConfiguration gc = GraphicsEnvironment.getLocalGraphicsEnvironment().
-				getDefaultScreenDevice()
-				.getDefaultConfiguration();
+				getDefaultScreenDevice().getDefaultConfiguration();
 
 		screenRecorder = new playback(gc, captureSize,
 				new Format(MediaTypeKey, MediaType.FILE, MimeTypeKey, MIME_AVI),
