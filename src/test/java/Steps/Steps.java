@@ -146,15 +146,14 @@ public class Steps {
 		WebElement searchBtn = driver.findElement(By.xpath("//input[@value='Go']"));
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].click();", searchBtn);
-		driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
+		//driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
 	}
 
 	@Then("^First result is four hundred dollars$")
 	public void first_result_is_four_hundred_dollars() throws Exception{
-		String price = driver.findElement(By.xpath("//span[contains(@class,'sx-price-whole')][contains(text(),'211')]"))
-				.getText();
+		String price = driver.findElement(By.xpath("//span[@class='sx-price-whole'][contains(text(),'212')]")).getText();
 		System.out.println(price);
-		Assert.assertEquals("211", price);
+		Assert.assertEquals("212", price);
 		driver.close();
 	}
 	
