@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="Runtest.Runner" time="26.283" tests="12" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="Runtest.Runner" time="27.955" tests="12" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -25,13 +25,11 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\elkana.mbiti"/>
     <property name="user.language" value="en"/>
-    <property name="sun.stderr.encoding" value="cp437"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_181\jre"/>
     <property name="basedir" value="C:\Users\elkana.mbiti\eclipse-workspace\GitRDTest"/>
     <property name="file.separator" value="\"/>
     <property name="line.separator" value="&#10;"/>
-    <property name="sun.stdout.encoding" value="cp437"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
@@ -57,7 +55,7 @@
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
     <property name="sun.os.patch.level" value=""/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_181\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_201/bin/server;C:/Program Files/Java/jre1.8.0_201/bin;C:/Program Files/Java/jre1.8.0_201/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Git\cmd;C:\Program Files\Git\bin;C:\Program Files\apache-maven\bin;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;C:\WINDOWS\system32;C:\Program Files\nodejs\;C:\Program Files\apache-maven\bin;C:\Program Files\Java\jdk1.8.0_181\bin;C:\Program Files (x86)\Zeenyx\AscentialTest\;C:\Users\elkana.mbiti\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\elkana.mbiti\AppData\Local\Programs\Python\Python37\;C:\Users\elkana.mbiti\AppData\Local\Microsoft\WindowsApps;C:\WINDOWS\system32;C:\Users\elkana.mbiti\AppData\Roaming\npm;C:\Program Files\apache-maven\bin;C:\Program Files\Java\jdk1.8.0_181\bin;;C:\Users\elkana.mbiti\eclipse\java-2018-09\eclipse;;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_181\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Git\cmd;C:\Program Files\Git\bin;C:\Program Files\apache-maven\bin;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;C:\WINDOWS\system32;C:\Program Files\nodejs\;C:\Program Files\apache-maven\bin;C:\Program Files\Java\jdk1.8.0_181\bin;C:\Program Files (x86)\Zeenyx\AscentialTest\;C:\Users\elkana.mbiti\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\elkana.mbiti\AppData\Local\Programs\Python\Python37\;C:\Users\elkana.mbiti\AppData\Local\Microsoft\WindowsApps;C:\WINDOWS\system32;C:\Users\elkana.mbiti\AppData\Roaming\npm;C:\Program Files\apache-maven\bin;C:\Program Files\Java\jdk1.8.0_181\bin;;."/>
     <property name="java.vm.info" value="mixed mode"/>
     <property name="java.vendor" value="Oracle Corporation"/>
     <property name="java.vm.version" value="25.181-b13"/>
@@ -68,15 +66,15 @@
     <property name="java.class.version" value="52.0"/>
   </properties>
   <testcase name="Given User is at the login page" classname="Scenario: User has to successfully login to application" time="0.001"/>
-  <testcase name="When title of login page is Sign in to GitHub" classname="Scenario: User has to successfully login to application" time="0"/>
+  <testcase name="When title of login page is Sign in to GitHub" classname="Scenario: User has to successfully login to application" time="0.001"/>
   <testcase name="Then User enters username and password" classname="Scenario: User has to successfully login to application" time="0"/>
   <testcase name="Then User clicks on Login button" classname="Scenario: User has to successfully login to application" time="0"/>
   <testcase name="Then User is on the home" classname="Scenario: User has to successfully login to application" time="0"/>
-  <testcase name="Scenario: User has to successfully login to application" classname="Scenario: User has to successfully login to application" time="0.057"/>
+  <testcase name="Scenario: User has to successfully login to application" classname="Scenario: User has to successfully login to application" time="0.075"/>
   <testcase name="Given User is at the Amazon landing page" classname="Scenario: User has to successfully search for product on Amazon" time="0"/>
   <testcase name="When title of login page is Amazon.com: Online Shopping for Electronics, Apparel, Computers, Books, DVDs &amp; more" classname="Scenario: User has to successfully search for product on Amazon" time="0"/>
   <testcase name="Then User enters search value Samsung" classname="Scenario: User has to successfully search for product on Amazon" time="0"/>
-  <testcase name="Then User clicks on search button" classname="Scenario: User has to successfully search for product on Amazon" time="0.001"/>
+  <testcase name="Then User clicks on search button" classname="Scenario: User has to successfully search for product on Amazon" time="0"/>
   <testcase name="Then First result is four hundred dollars" classname="Scenario: User has to successfully search for product on Amazon" time="0"/>
-  <testcase name="Scenario: User has to successfully search for product on Amazon" classname="Scenario: User has to successfully search for product on Amazon" time="0.068"/>
+  <testcase name="Scenario: User has to successfully search for product on Amazon" classname="Scenario: User has to successfully search for product on Amazon" time="0.102"/>
 </testsuite>
