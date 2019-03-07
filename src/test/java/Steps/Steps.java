@@ -155,6 +155,11 @@ public class Steps {
 		String price = driver.findElement(By.xpath("//span[@class='a-price-whole'][contains(text(),'748')]")).getText();
 		System.out.println(price);
 		Assert.assertEquals("748", price);
+		if (price.equals("748")) {
+			System.out.println("Test passed: Bot found Samsung product of price $748");
+		} else {
+			System.out.println("Test Failed: Samsung product of price $748 not found");
+		}
 		driver.close();
 	}
 	
