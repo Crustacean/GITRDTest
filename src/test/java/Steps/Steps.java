@@ -139,6 +139,7 @@ public class Steps {
 //		driver.navigate().back();
 //		driver.navigate().forward();
 		driver.findElement(By.id("twotabsearchtextbox")).sendKeys("Samsung");
+		System.out.println("Searching for Samsung products...");
 	}
 
 	@Then("^User clicks on search button$")
@@ -151,9 +152,9 @@ public class Steps {
 
 	@Then("^First result is four hundred dollars$")
 	public void first_result_is_four_hundred_dollars() throws Exception{
-		String price = driver.findElement(By.xpath("//span[@class='sx-price-whole'][contains(text(),'212')]")).getText();
+		String price = driver.findElement(By.xpath("//span[@class='a-price-whole'][contains(text(),'748')]")).getText();
 		System.out.println(price);
-		Assert.assertEquals("212", price);
+		Assert.assertEquals("748", price);
 		driver.close();
 	}
 	
