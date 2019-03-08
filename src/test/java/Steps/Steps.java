@@ -153,12 +153,12 @@ public class Steps {
 	@Then("^First result is four hundred dollars$")
 	public void first_result_is_four_hundred_dollars() throws Exception{
 		String price = driver.findElement(By.xpath("//span[@class='a-price-whole'][contains(text(),'748')]")).getText();
-		System.out.println(price);
+		System.out.println("Searching for Samsung worth $"+price);
 		Assert.assertEquals("748", price);
 		if (price.equals("748")) {
-			System.out.println("Test passed: Bot found Samsung product of price $748");
+			System.out.println("Test passed: Bot found Samsung product of price $"+price);
 		} else {
-			System.out.println("Test Failed: Samsung product of price $748 not found");
+			System.out.println("Test Failed: Samsung product of price $"+price+ "not found");
 		}
 		driver.close();
 	}
