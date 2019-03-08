@@ -138,8 +138,8 @@ public class Steps {
 //		driver.navigate().forward();
 //		driver.navigate().back();
 //		driver.navigate().forward();
-		driver.findElement(By.id("twotabsearchtextbox")).sendKeys("Samsung");
-		System.out.println("Searching for Samsung products...");
+		driver.findElement(By.id("twotabsearchtextbox")).sendKeys("iphone");
+		System.out.println("Searching for iPhone products...");
 	}
 
 	@Then("^User clicks on search button$")
@@ -152,10 +152,10 @@ public class Steps {
 
 	@Then("^First result is four hundred dollars$")
 	public void first_result_is_four_hundred_dollars() throws Exception{
-		String price = driver.findElement(By.xpath("//span[@class='a-price-whole'][contains(text(),'748')]")).getText();
+		String price = driver.findElement(By.xpath("//span[@class='a-price-whole'][contains(text(),'899')]")).getText();
 		System.out.println("Searching for Samsung worth $"+price);
-		Assert.assertEquals("748", price);
-		if (price.equals("748")) {
+		Assert.assertEquals("899", price);
+		if (price.equals("899")) {
 			System.out.println("Test passed: Bot found Samsung product of price $"+price);
 		} else {
 			System.out.println("Test Failed: Samsung product of price $"+price+ "not found");
