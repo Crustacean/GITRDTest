@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 150528731,
+  "duration": 152539379,
   "status": "passed"
 });
 formatter.scenario({
@@ -47,43 +47,43 @@ formatter.match({
   "location": "Steps.user_at_the_login_page()"
 });
 formatter.result({
-  "duration": 10393044388,
+  "duration": 10748302024,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.title_of_login_page_is_Sign_in_to_GitHub()"
 });
 formatter.result({
-  "duration": 11542119,
+  "duration": 25618588,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.user_enters_username_and_password()"
 });
 formatter.result({
-  "duration": 511568786,
+  "duration": 604621120,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.user_clicks_on_Login_button()"
 });
 formatter.result({
-  "duration": 2010751600,
+  "duration": 2108461518,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.user_is_on_the_home()"
 });
 formatter.result({
-  "duration": 155455148,
+  "duration": 136017095,
   "status": "passed"
 });
 formatter.after({
-  "duration": 88978138,
+  "duration": 77927568,
   "status": "passed"
 });
 formatter.before({
-  "duration": 12448785,
+  "duration": 11240305,
   "status": "passed"
 });
 formatter.scenario({
@@ -123,39 +123,39 @@ formatter.match({
   "location": "Steps.user_is_at_the_Amazon_landing_page()"
 });
 formatter.result({
-  "duration": 7849111369,
+  "duration": 11831098731,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.title_of_login_page_is_Amazon_com_Online_Shopping_for_Electronics_Apparel_Computers_Books_DVDs_more()"
 });
 formatter.result({
-  "duration": 2130865331,
+  "duration": 3831900707,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.user_enters_search_value_Samsung()"
 });
 formatter.result({
-  "duration": 157517370,
+  "duration": 251363359,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.user_clicks_on_search_button()"
 });
 formatter.result({
-  "duration": 2877286370,
+  "duration": 12839847380,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.first_result_is_four_hundred_dollars()"
 });
 formatter.result({
-  "duration": 2394393128,
+  "duration": 2417142848,
   "status": "passed"
 });
 formatter.after({
-  "duration": 65045703,
+  "duration": 100813907,
   "status": "passed"
 });
 });
